@@ -5,10 +5,11 @@ using UnityEngine;
 
 public class Stars : MonoBehaviour
 {
+    PlayerController playerController;
     GameObject player;
     Joint2D join;
-    float timerConnect = 1f;
-   
+    float timerConnect = Mathf.Clamp(1f,0f,1f);
+    float angle;
 
     void Start()
     {
@@ -18,26 +19,26 @@ public class Stars : MonoBehaviour
     {
         if (collision.CompareTag("Player") && timerConnect>=1f && join.connectedBody==null )
         {
-            player = collision.gameObject;          
+            player = collision.gameObject;
+            playerController = player.GetComponent<PlayerController>();
             join.connectedBody = player.GetComponent<Rigidbody2D>();
+
         }        
     }
     void Update()
     {
-        if (timerConnect<2f) timerConnect+= Time.deltaTime;
-        ExitConnect();
-
-
+        if (timerConnect<2f) timerConnect+= Time.deltaTime;        
         if (join.connectedBody != null)
         {
-            player.GetComponent<PlayerController>().Force();
+            playerController.Force();
             Vector3 dir = player.transform.position - transform.position;
-            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg ;
-            player.transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 0, angle), 1f+Time.deltaTime);
-
+            angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;          
+            Debug.Log(angle);
+            Slerp();
+            
         }
-        
 
+        ExitConnect();
     }
     void ExitConnect() 
     {
@@ -45,6 +46,14 @@ public class Stars : MonoBehaviour
         {
             join.connectedBody = null;
             timerConnect = 0f;
+            playerController.Impulse();
+
+            Slerp();
+            
         }
+    }
+    void Slerp()
+    {
+        player.transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 0, angle),Time.deltaTime+1);
     }
 }
