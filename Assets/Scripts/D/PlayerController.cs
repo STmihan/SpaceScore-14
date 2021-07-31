@@ -7,25 +7,33 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
 
     public float force;    
-    public Joint2D join;
+    
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        join = GetComponent<Joint2D>();
+        
     }
 
 
     void Update()
-    {     
-
-        if (Input.GetMouseButtonDown(0)) rb.AddForce(transform.up * force*10, ForceMode2D.Impulse);    //удалить
-     
+    {
+        Move();
 
     }
     public void Force()
     {
         rb.AddForce(transform.up * force, ForceMode2D.Force);
     }
- 
+
+    void Move()
+    {
+        float move = Input.GetAxis("Horizontal");
+        if (rb.velocity.x < 0.8f && rb.velocity.y < 0.8f)
+        {
+            rb.velocity = new Vector2(0, 0);
+            rb.AddTorque(move);
+            if (Input.GetMouseButtonDown(0)) rb.AddForce(transform.up * force * 10, ForceMode2D.Impulse);
+        }
+    }
 }

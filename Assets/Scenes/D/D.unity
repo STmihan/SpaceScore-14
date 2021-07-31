@@ -251,8 +251,9 @@ GameObject:
   - component: {fileID: 598821009}
   - component: {fileID: 598821012}
   - component: {fileID: 598821011}
-  - component: {fileID: 598821013}
   - component: {fileID: 598821014}
+  - component: {fileID: 598821015}
+  - component: {fileID: 598821016}
   m_Layer: 0
   m_Name: sun
   m_TagString: Untagged
@@ -319,7 +320,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 598821008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.03, y: -4.89, z: 0}
+  m_LocalPosition: {x: 8.03, y: -6.45, z: 0}
   m_LocalScale: {x: 3.3634, y: 3.3634, z: 3.3634}
   m_Children: []
   m_Father: {fileID: 0}
@@ -362,25 +363,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1
---- !u!232 &598821013
-DistanceJoint2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 598821008}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 0}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
-  m_AutoConfigureDistance: 1
-  m_Distance: 9.401754
-  m_MaxDistanceOnly: 0
 --- !u!114 &598821014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -393,6 +375,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c096feca1d68ffa4daa1b43e38b7701c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!58 &598821015
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598821008}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!232 &598821016
+DistanceJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598821008}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 1
+  m_ConnectedRigidBody: {fileID: 0}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_AutoConfigureDistance: 0
+  m_Distance: 3
+  m_MaxDistanceOnly: 0
 --- !u!1 &1031299303
 GameObject:
   m_ObjectHideFlags: 0
@@ -459,7 +476,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031299303}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.26, y: 2.78, z: 0}
+  m_LocalPosition: {x: -7.26, y: 1.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -525,7 +542,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117390346}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -1.56, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -609,13 +626,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1296154925}
-  m_LocalRotation: {x: -0, y: -0, z: -0.4026056, w: 0.91537356}
-  m_LocalPosition: {x: 1.51, y: 4.41, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7195483, w: 0.6944425}
+  m_LocalPosition: {x: -9, y: 5.32, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -47.482}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -92.034}
 --- !u!114 &1296154928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -628,8 +645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ae83099500a3e64c810a8a508683b5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 2
-  join: {fileID: 0}
+  force: 3
 --- !u!70 &1296154929
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -659,7 +675,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 4.33
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -679,8 +695,9 @@ GameObject:
   - component: {fileID: 1541939523}
   - component: {fileID: 1541939526}
   - component: {fileID: 1541939525}
-  - component: {fileID: 1541939527}
   - component: {fileID: 1541939528}
+  - component: {fileID: 1541939529}
+  - component: {fileID: 1541939527}
   m_Layer: 0
   m_Name: white dwarf
   m_TagString: Untagged
@@ -747,7 +764,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1541939522}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.65, y: 3.2, z: 0}
+  m_LocalPosition: {x: 3.65, y: 1.6400001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -799,15 +816,15 @@ DistanceJoint2D:
   m_GameObject: {fileID: 1541939522}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 0
+  m_EnableCollision: 1
   m_ConnectedRigidBody: {fileID: 0}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
-  m_AutoConfigureDistance: 1
-  m_Distance: 4.854122
+  m_AutoConfigureDistance: 0
+  m_Distance: 3
   m_MaxDistanceOnly: 0
 --- !u!114 &1541939528
 MonoBehaviour:
@@ -821,6 +838,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c096feca1d68ffa4daa1b43e38b7701c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!58 &1541939529
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541939522}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &1694263322
 GameObject:
   m_ObjectHideFlags: 0
@@ -835,6 +868,7 @@ GameObject:
   - component: {fileID: 1694263325}
   - component: {fileID: 1694263327}
   - component: {fileID: 1694263328}
+  - component: {fileID: 1694263329}
   m_Layer: 0
   m_Name: red giant
   m_TagString: Untagged
@@ -901,7 +935,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1694263322}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.18, y: -7.38, z: 0}
+  m_LocalPosition: {x: -2.18, y: -8.940001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -953,16 +987,16 @@ DistanceJoint2D:
   m_GameObject: {fileID: 1694263322}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 0
+  m_EnableCollision: 1
   m_ConnectedRigidBody: {fileID: 0}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
-  m_AutoConfigureDistance: 1
-  m_Distance: 7.6952453
-  m_MaxDistanceOnly: 0
+  m_AutoConfigureDistance: 0
+  m_Distance: 3
+  m_MaxDistanceOnly: 1
 --- !u!114 &1694263328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -975,6 +1009,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c096feca1d68ffa4daa1b43e38b7701c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!58 &1694263329
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694263322}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1001 &3646833323068374510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1000,7 +1050,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3646833321479485335, guid: 749aeaa7dff9a3a4c96a683ab11a09f0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.61220133
+      value: -2.1722012
       objectReference: {fileID: 0}
     - target: {fileID: 3646833321479485335, guid: 749aeaa7dff9a3a4c96a683ab11a09f0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1048,12 +1098,24 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2514125199979039273, guid: 1f44a0550f3b11f458833ad5b3059baf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 6.2325
+      objectReference: {fileID: 0}
+    - target: {fileID: 2514125199979039273, guid: 1f44a0550f3b11f458833ad5b3059baf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2514125199979039273, guid: 1f44a0550f3b11f458833ad5b3059baf, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2514125199979039273, guid: 1f44a0550f3b11f458833ad5b3059baf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.4381723
+      value: 0.649
       objectReference: {fileID: 0}
     - target: {fileID: 2514125199979039273, guid: 1f44a0550f3b11f458833ad5b3059baf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.1423826
+      value: -12.34
       objectReference: {fileID: 0}
     - target: {fileID: 2514125199979039273, guid: 1f44a0550f3b11f458833ad5b3059baf, type: 3}
       propertyPath: m_LocalPosition.z
