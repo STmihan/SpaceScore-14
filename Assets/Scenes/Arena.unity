@@ -825,13 +825,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2064938025264031389, guid: e35d236a1dc48294d8d1f0db6d260ac6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 2064938026012359445, guid: e35d236a1dc48294d8d1f0db6d260ac6, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2064938026012359445, guid: e35d236a1dc48294d8d1f0db6d260ac6, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 2064938026012359446, guid: e35d236a1dc48294d8d1f0db6d260ac6, type: 3}
-      propertyPath: maxTimer
-      value: 1
+      propertyPath: LineSpeed
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2064938026012359446, guid: e35d236a1dc48294d8d1f0db6d260ac6, type: 3}
       propertyPath: PointToRotate
@@ -880,6 +888,14 @@ PrefabInstance:
     - target: {fileID: 2064938026012359447, guid: e35d236a1dc48294d8d1f0db6d260ac6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2064938026012359464, guid: e35d236a1dc48294d8d1f0db6d260ac6, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2064938026012359465, guid: e35d236a1dc48294d8d1f0db6d260ac6, type: 3}
+      propertyPath: m_BodyType
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e35d236a1dc48294d8d1f0db6d260ac6, type: 3}
