@@ -138,7 +138,6 @@ public class Player : MonoBehaviour
 
     public void Death()
     {
-        Time.timeScale = 0;
         Debug.Log("Game over");
         isDead = true;
     }
