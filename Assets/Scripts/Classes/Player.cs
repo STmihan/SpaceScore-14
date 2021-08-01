@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
         isDead = false;
     }
 
-
+    bool b;
     private void FixedUpdate()
     {
         LineRenderer.SetPosition(0, GFX.transform.localPosition);
@@ -55,7 +55,7 @@ public class Player : MonoBehaviour
         LineRenderer.SetPosition(1, NextPoint.transform.localPosition);
         if (isCapture)
         {
-            Capture();
+            Capture(b);
         }
         if (!isCapture)
         {
@@ -71,6 +71,10 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             StartCoroutine(Teleporting());
+        }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            b = !b;
         }
     }
 
@@ -92,12 +96,22 @@ public class Player : MonoBehaviour
         }
     }
 
-    void Capture()
+    void Capture(bool ChangeRotateDirection)
     {
-        transform.RotateAround(PointToRotate.transform.position, Vector3.forward, Time.deltaTime*SpeedRotation);
-        Vector2 dir = PointToRotate.transform.position - transform.position;
-        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg + 180f;
-        transform.rotation = Quaternion.Euler(new Vector3(0,0,angle));
+        if (ChangeRotateDirection)
+        {
+            transform.RotateAround(PointToRotate.transform.position, Vector3.forward, Time.deltaTime * SpeedRotation);
+            Vector2 dir = PointToRotate.transform.position - transform.position;
+            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg + 180f;
+            transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+        }
+        else
+        {
+            transform.RotateAround(PointToRotate.transform.position, Vector3.forward, Time.deltaTime * -SpeedRotation);
+            Vector2 dir = PointToRotate.transform.position - transform.position;
+            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+        }
     }
 
     IEnumerator Teleporting()
@@ -122,7 +136,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    void Death()
+    public void Death()
     {
         Time.timeScale = 0;
         Debug.Log("Game over");
