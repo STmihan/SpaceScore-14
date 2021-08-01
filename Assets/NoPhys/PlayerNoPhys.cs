@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class PlayerNoPhys : MonoBehaviour
 {
     public GameObject GFX;
-    public Transform PointToRotate;
+    public GameObject PointToRotate;
     public GameObject NextPoint;
     public Transform Max;
     public float SpeedRotation;
@@ -53,11 +53,9 @@ public class PlayerNoPhys : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            // transform.position = NextPoint.transform.position;
-            // NextPoint.transform.position = transform.position;
             LineRenderer.enabled = false;
             isCapture = false;
-            PointToRotate = transform;
+            PointToRotate.transform.position = transform.position;
             _camera.transform.position = new Vector3(
                 0,
                 GFX.transform.position.y + 6f,
@@ -78,7 +76,7 @@ public class PlayerNoPhys : MonoBehaviour
     {
         if (other.CompareTag("Star"))
         {
-            PointToRotate = other.transform;
+            PointToRotate.transform.position = other.transform.position;
             isCapture = true;
         }
     }

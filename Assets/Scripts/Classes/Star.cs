@@ -9,7 +9,7 @@ public class Star : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            other.GetComponent<Player>().LineSpeed = LineSpeed;
+            other.GetComponent<Player>().ForceSpeed = LineSpeed;
         }
     }
 }
