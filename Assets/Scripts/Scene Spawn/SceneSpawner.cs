@@ -8,7 +8,7 @@ using Random = UnityEngine.Random;
 
 public class SceneSpawner : MonoBehaviour
 {
-    public Player Player;
+    public GameObject Player;
     
     [Space][Header("Stars")]
     public StarBlock StarBlockPrefab;

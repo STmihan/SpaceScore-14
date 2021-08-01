@@ -20,8 +20,8 @@ public class Planets : MonoBehaviour
         foreach (Rigidbody2D body in gravityBodies)
         {
             Vector3 directionToPlanet = (transform.position - body.transform.position).normalized;
-            float distance = (transform.position - body.transform.position).magnitude;
-            float force= gravityForce*rb.mass*body.mass/(distance* distance);
+            float distance = (transform.position - body.transform.position).sqrMagnitude;
+            float force= gravityForce*rb.mass*body.mass/(distance * distance);
             body.AddForce(directionToPlanet* force);
         }
     }

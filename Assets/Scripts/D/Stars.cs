@@ -22,7 +22,7 @@ public class Stars : MonoBehaviour
             join.connectedBody = player.GetComponent<Rigidbody2D>();
         }        
     }
-    void Update()
+    void FixedUpdate()
     {
         if (timerConnect<2f) timerConnect+= Time.deltaTime;
         ExitConnect();
@@ -30,11 +30,9 @@ public class Stars : MonoBehaviour
 
         if (join.connectedBody != null)
         {
-            player.GetComponent<PlayerController>().Force();
             Vector3 dir = player.transform.position - transform.position;
             float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg ;
-            player.transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 0, angle), 1f+Time.deltaTime);
-
+            player.transform.RotateAround(transform.position, Vector3.forward, 360f * Time.fixedDeltaTime);
         }
         
 

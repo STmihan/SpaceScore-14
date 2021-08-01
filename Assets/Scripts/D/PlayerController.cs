@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
     }
     public void Force()
     {
-        rb.AddForce(transform.up * force, ForceMode2D.Force);
+        rb.AddRelativeForce(transform.up * force, ForceMode2D.Force);
     }
 
     void Move()

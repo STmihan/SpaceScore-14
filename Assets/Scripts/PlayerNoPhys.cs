@@ -1,10 +1,10 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Player : MonoBehaviour
+public class PlayerNoPhys : MonoBehaviour
 {
     public GameObject GFX;
     public Transform PointToRotate;
@@ -15,15 +15,14 @@ public class Player : MonoBehaviour
     [Space] [Header("Line")] 
     public LineRenderer LineRenderer;
     public float LineSpeed;
-    private bool isCapture;
-
-    [Space] [Header("Camera")]
-    private Camera _camera;
+    public bool isCapture;
 
     private Rigidbody2D _rigidbody2D;
+    private Camera _camera;
 
     private void Start()
     {
+        isCapture = false;
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _camera = Camera.main;
     }
@@ -48,24 +47,30 @@ public class Player : MonoBehaviour
             LineSpeed * Time.fixedDeltaTime);
         }
         LineRenderer.SetPosition(1, NextPoint.transform.localPosition);
-        if (isCapture)
-        {
-            Capture();
-        }
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            transform.position = NextPoint.transform.position;
-            NextPoint.transform.position = transform.position;
+            // transform.position = NextPoint.transform.position;
+            // NextPoint.transform.position = transform.position;
             LineRenderer.enabled = false;
+            isCapture = false;
+            PointToRotate = transform;
             _camera.transform.position = new Vector3(
                 0,
-                _camera.transform.position.y + 6f,
+                GFX.transform.position.y + 6f,
                 -10f
             );
+        }
+        if (isCapture)
+        {
+            Capture();
+        }
+        else
+        {
+            transform.position = Vector2.MoveTowards(transform.position, Max.transform.position, 2f*Time.deltaTime);
         }
     }
 
@@ -75,15 +80,6 @@ public class Player : MonoBehaviour
         {
             PointToRotate = other.transform;
             isCapture = true;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("Star"))
-        {
-            PointToRotate = transform;
-            isCapture = false;
         }
     }
 
