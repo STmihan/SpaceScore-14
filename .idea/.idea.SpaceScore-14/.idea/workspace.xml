@@ -2,28 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a39516d5-cf24-4f02-8f46-e18e3c361042" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Animation.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/Black Hole.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/Black Hole.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/BlackHole_Ilde.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/BlackHole_Ilde.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole/black hole0000.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole/black hole0000.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Classes/BlackHole.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Classes/BlackHole.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Arena.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Arena.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0000.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0001.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0002.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0002.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0003.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0003.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0004.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0004.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0005.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0005.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0006.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0006.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0007.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0007.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0008.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0008.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0009.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0009.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Respawner.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScoreCounter.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SpaceScore-14/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SpaceScore-14/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/BlackHole_Ilde.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/BlackHole_Ilde.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Red star.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Red star.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/StarBlock.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/StarBlock.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/White star.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/White star.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Yellow star.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Yellow star.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Arena_STmihan.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Arena_STmihan.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Classes/BlackHole.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Classes/BlackHole.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Classes/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Classes/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe4.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe5.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe5.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe6.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InGameUIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InGameUIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +44,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@10.5.0/Editor/2D/ShapeEditor/EditablePath/EditablePathController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.2d.sprite/Editor/SpriteEditorModule/SpriteFrameModule/SpriteFrameModule.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.shadergraph@10.5.1/Editor/Drawing/Inspector/PropertyDrawers/Vector4PropertyDrawer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@10.5.1/Runtime/Common/SerializedDictionary.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Respawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Classes/BlackHole.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -44,6 +68,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Classes/Star.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Classes/Player.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Classes/BlackHole.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/InGameUIManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Respawner.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1w7sougtjnZWRfAncY04DGCW5Qs" />
@@ -94,7 +120,7 @@
       <option name="presentableId" value="Default" />
       <updated>1627821147656</updated>
       <workItem from="1627821157842" duration="4571000" />
-      <workItem from="1627826334984" duration="2954000" />
+      <workItem from="1627826334984" duration="4818000" />
     </task>
     <servers />
   </component>

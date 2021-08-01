@@ -10,7 +10,7 @@ public class BlackHole : MonoBehaviour
     void FixedUpdate()
     {
         float speed = Time.fixedDeltaTime*BlackHoleSpeed*Time.time;
-        transform.position = Vector3.MoveTowards(transform.position, UP.position , speed);
+        transform.position = Vector3.MoveTowards(transform.position, UP.position , speed/1000f);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -18,6 +18,13 @@ public class BlackHole : MonoBehaviour
         if (other.CompareTag("Player") && other.GetComponent<Player>())
         {
             other.GetComponent<Player>().Death();
+            
         }
+        Destroy(other.gameObject);
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        Destroy(other.gameObject);
     }
 }

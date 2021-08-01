@@ -22,14 +22,6 @@ public class InGameUIManager : MonoBehaviour
             Score = Player.transform.position.y;
         if (Player.GetComponent<Player>().isDead)
             GameOver.gameObject.SetActive(true);
-
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            Time.timeScale = 1f;
-            SceneManager.LoadScene(0);
-        }
-        
-        
         ScoreText.text = Mathf.CeilToInt(Score).ToString();
     }
 }
