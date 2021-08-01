@@ -7,33 +7,38 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     public GameObject GFX;
-    public Transform PointToRotate;
+    public GameObject PointToRotate;
     public GameObject NextPoint;
     public Transform Max;
+    [Space]
     public float SpeedRotation;
-
-    [Space] [Header("Line")] 
+    [Space]
     public LineRenderer LineRenderer;
-    public float LineSpeed;
-    private bool isCapture;
-
-    [Space] [Header("Camera")]
-    private Camera _camera;
-
-    private Rigidbody2D _rigidbody2D;
-
+    
+    
+    private bool isCapture { get; set; }
+    private bool isTeleporting;
+    public bool isDead { get; set; }
+    
+    public float LineSpeed { get; set; }
+    
+    public float maxTimer;
+    private float curTimer;
     private void Start()
     {
-        _rigidbody2D = GetComponent<Rigidbody2D>();
-        _camera = Camera.main;
+        LineRenderer.enabled = false;
+        isCapture = true;
+        curTimer = maxTimer;
+        isDead = false;
     }
+
 
     private void FixedUpdate()
     {
         LineRenderer.SetPosition(0, GFX.transform.localPosition);
         if (Input.GetKey(KeyCode.Space))
         {
-            LineRenderer.enabled = true;
+            if (!isTeleporting) LineRenderer.enabled = true;
             NextPoint.transform.position = Vector2.MoveTowards(
             NextPoint.transform.position,
             Max.position,
@@ -52,28 +57,28 @@ public class Player : MonoBehaviour
         {
             Capture();
         }
+        if (!isCapture)
+        {
+            if (curTimer > 0)
+                curTimer -= Time.fixedDeltaTime;
+            else 
+                Death();
+        }
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            transform.position = NextPoint.transform.position;
-            NextPoint.transform.position = transform.position;
-            LineRenderer.enabled = false;
-            _camera.transform.position = new Vector3(
-                0,
-                _camera.transform.position.y + 6f,
-                -10f
-            );
+            StartCoroutine(Teleporting());
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
         if (other.CompareTag("Star"))
         {
-            PointToRotate = other.transform;
+            PointToRotate.transform.position = other.transform.position;
             isCapture = true;
         }
     }
@@ -82,7 +87,7 @@ public class Player : MonoBehaviour
     {
         if (other.CompareTag("Star"))
         {
-            PointToRotate = transform;
+            PointToRotate.transform.position = transform.position;
             isCapture = false;
         }
     }
@@ -93,5 +98,34 @@ public class Player : MonoBehaviour
         Vector2 dir = PointToRotate.transform.position - transform.position;
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg + 180f;
         transform.rotation = Quaternion.Euler(new Vector3(0,0,angle));
+    }
+
+    IEnumerator Teleporting()
+    {
+        GFX.GetComponent<SpriteRenderer>().enabled = false;
+        transform.position = NextPoint.transform.position;
+        NextPoint.transform.position = transform.position;
+        LineRenderer.enabled = false;
+        isTeleporting = true;
+        yield return new WaitForSeconds(0.5f);
+        GFX.GetComponent<SpriteRenderer>().enabled = true;
+        yield return new WaitForSeconds(0.25f);
+        isTeleporting = false;
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("InnerStar"))
+        {
+            Death();
+        }
+    }
+
+    void Death()
+    {
+        Time.timeScale = 0;
+        Debug.Log("Game over");
+        isDead = true;
     }
 }
