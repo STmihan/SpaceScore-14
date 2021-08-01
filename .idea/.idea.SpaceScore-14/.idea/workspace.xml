@@ -2,38 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a39516d5-cf24-4f02-8f46-e18e3c361042" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0000.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0000.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0001.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0001.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0002.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0002.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0003.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0003.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0004.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0004.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0005.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0005.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0006.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0006.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0007.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0007.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0008.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0008.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0009.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0009.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Respawner.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScoreCounter.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SpaceScore-14/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SpaceScore-14/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/BlackHole_Ilde.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/BlackHole_Ilde.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Red star.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Red star.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/StarBlock.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/StarBlock.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/White star.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/White star.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Yellow star.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Yellow star.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Arena_STmihan.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Arena_STmihan.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Classes/BlackHole.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Classes/BlackHole.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Classes/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Classes/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InGameUIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InGameUIManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,10 +36,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/D/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/NoPhys/PlayerNoPhys.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Classes/Star.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Classes/Player.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Classes/BlackHole.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/InGameUIManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Respawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/InGameUIManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Classes/Player.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1w7sougtjnZWRfAncY04DGCW5Qs" />
@@ -120,7 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1627821147656</updated>
       <workItem from="1627821157842" duration="4571000" />
-      <workItem from="1627826334984" duration="4818000" />
+      <workItem from="1627826334984" duration="5637000" />
     </task>
     <servers />
   </component>
