@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
 {
     public GameObject GFX;
     public GameObject PointToRotate;
-    public GameObject NextPoint;
+    public NextPoint NextPoint;
     public Transform Max;
     [Space]
     public float SpeedRotation;
@@ -24,6 +24,8 @@ public class Player : MonoBehaviour
     
     public float maxTimer;
     private float curTimer;
+    
+    private bool b; // Для поворота
     private void Start()
     {
         LineRenderer.enabled = false;
@@ -32,27 +34,27 @@ public class Player : MonoBehaviour
         isDead = false;
     }
 
-    bool b;
     private void FixedUpdate()
     {
         LineRenderer.SetPosition(0, GFX.transform.localPosition);
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) && !isTeleporting)
         {
-            if (!isTeleporting) LineRenderer.enabled = true;
-            NextPoint.transform.position = Vector2.MoveTowards(
-            NextPoint.transform.position,
+            NextPoint.Point.enabled = true;
+            LineRenderer.enabled = true;
+            NextPoint.gameObject.transform.position = Vector2.MoveTowards(
+            NextPoint.gameObject.transform.position,
             Max.position,
             LineSpeed*Time.fixedDeltaTime);
         }
         else
         {
             LineRenderer.enabled = true;
-            NextPoint.transform.position = Vector2.MoveTowards(
-            NextPoint.transform.position,
+            NextPoint.gameObject.transform.position = Vector2.MoveTowards(
+            NextPoint.gameObject.transform.position,
             transform.position,
             LineSpeed * Time.fixedDeltaTime);
         }
-        LineRenderer.SetPosition(1, NextPoint.transform.localPosition);
+        LineRenderer.SetPosition(1, NextPoint.gameObject.transform.localPosition);
         if (isCapture)
         {
             Capture(b);
@@ -65,16 +67,26 @@ public class Player : MonoBehaviour
                 Death();
         }
     }
-
+    
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             StartCoroutine(Teleporting());
+            NextPoint.Point.enabled = false;
         }
         if (Input.GetKeyDown(KeyCode.Q))
         {
             b = !b;
+        }
+
+        if (LineRenderer.GetPosition(1) == LineRenderer.GetPosition(0))
+        {
+            NextPoint.Point.GetComponent<SpriteRenderer>().enabled = false;
+        }
+        else
+        {
+            NextPoint.Point.GetComponent<SpriteRenderer>().enabled = true;
         }
     }
 
@@ -116,16 +128,19 @@ public class Player : MonoBehaviour
 
     IEnumerator Teleporting()
     {
-        GFX.GetComponent<SpriteRenderer>().enabled = false;
-        transform.position = NextPoint.transform.position;
-        NextPoint.transform.position = transform.position;
         LineRenderer.enabled = false;
         isTeleporting = true;
-        yield return new WaitForSeconds(0.5f);
+        NextPoint.Target.SetActive(true);
+        GFX.GetComponent<SpriteRenderer>().enabled = false;
+        transform.position = NextPoint.gameObject.transform.position;
+        NextPoint.gameObject.transform.position = transform.position;
+        yield return new WaitForSecondsRealtime(.3f);
+        NextPoint.Target.GetComponent<Animator>().SetTrigger("Trigger");
+        yield return new WaitForSecondsRealtime(.5f);
+        NextPoint.Target.SetActive(false);
         GFX.GetComponent<SpriteRenderer>().enabled = true;
-        yield return new WaitForSeconds(0.25f);
+        yield return new WaitForSecondsRealtime(.5f);
         isTeleporting = false;
-
     }
 
     private void OnTriggerEnter2D(Collider2D other)
