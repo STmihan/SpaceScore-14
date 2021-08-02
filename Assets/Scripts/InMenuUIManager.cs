@@ -11,6 +11,7 @@ public class InMenuUIManager : MonoBehaviour
     private bool a = false;
     private bool b = true;
     private bool c = true;
+    public AudioSource SoundUI;
     private void Start()
     {
         MenuUI.Help.onClick.AddListener(OnHelp);
@@ -20,25 +21,28 @@ public class InMenuUIManager : MonoBehaviour
         
         GameObject.FindWithTag("AudioManager").GetComponent<AudioManager>().Mixer.audioMixer
             .GetFloat("Music", out float music);
-        if (music <= 0) b = false;
+        if (music < 0) b = false;
         GameObject.FindWithTag("AudioManager").GetComponent<AudioManager>().Mixer.audioMixer
             .GetFloat("Sounds", out float sounds);
-        if (sounds <= 0) c = false;
+        if (sounds < 0) c = false;
     }
 
     void OnHelp()
     {
+        SoundUI.PlayOneShot(SoundUI.clip);
         a = !a;       
         MenuUI.HelpUI.gameObject.SetActive(a);
     }
 
     void OnPlay()
     {
+        SoundUI.PlayOneShot(SoundUI.clip);
         SceneManager.LoadScene(1);
     }
 
     void OnMusic()
     {
+        SoundUI.PlayOneShot(SoundUI.clip);
         b = !b;
         if (b)
             GameObject.FindWithTag("AudioManager").GetComponent<AudioManager>().Mixer.audioMixer.SetFloat("Music", 0);
@@ -48,6 +52,7 @@ public class InMenuUIManager : MonoBehaviour
 
     void OnSound()
     {
+        SoundUI.PlayOneShot(SoundUI.clip);
         c = !c;
         if (c)
             GameObject.FindWithTag("AudioManager").GetComponent<AudioManager>().Mixer.audioMixer.SetFloat("Sounds", 0);

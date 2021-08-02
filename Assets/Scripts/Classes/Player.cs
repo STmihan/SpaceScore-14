@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.UI;
 
 public class Player : MonoBehaviour
@@ -14,7 +15,8 @@ public class Player : MonoBehaviour
     public float SpeedRotation;
     [Space]
     public LineRenderer LineRenderer;
-    
+    public AudioSource lineSound;
+    public AudioSource TPsound;
     
     private bool isCapture { get; set; }
     private bool isTeleporting;
@@ -24,6 +26,7 @@ public class Player : MonoBehaviour
     
     public float maxTimer;
     private float curTimer;
+
     
     private bool b; // Для поворота
     private void Start()
@@ -32,6 +35,7 @@ public class Player : MonoBehaviour
         isCapture = true;
         curTimer = maxTimer;
         isDead = false;
+        lineSound.Play();
     }
 
     private void FixedUpdate()
@@ -83,10 +87,12 @@ public class Player : MonoBehaviour
         if (LineRenderer.GetPosition(1) == LineRenderer.GetPosition(0))
         {
             NextPoint.Point.GetComponent<SpriteRenderer>().enabled = false;
+            lineSound.mute = true;
         }
         else
         {
             NextPoint.Point.GetComponent<SpriteRenderer>().enabled = true;
+            lineSound.mute = false;
         }
     }
 
@@ -128,6 +134,7 @@ public class Player : MonoBehaviour
 
     IEnumerator Teleporting()
     {
+        TPsound.PlayOneShot(TPsound.clip);
         LineRenderer.enabled = false;
         isTeleporting = true;
         NextPoint.Target.SetActive(true);

@@ -23,6 +23,7 @@ public class InGameUIManager : MonoBehaviour
     public int Score;
 
     public InGameUIState _inGameUIState;
+    public AudioSource SoundUI;
     private int skinCounter;
     
     private bool a = true;
@@ -125,11 +126,13 @@ public class InGameUIManager : MonoBehaviour
     
     public void OnExit()
     {
+        SoundUI.PlayOneShot(SoundUI.clip);
         SceneManager.LoadScene(0);
     }
 
     public void OnMusic()
     {
+        SoundUI.PlayOneShot(SoundUI.clip);
         a = !a;
         if (a)
             GameObject.FindWithTag("AudioManager").GetComponent<AudioManager>().Mixer.audioMixer.SetFloat("Music", 0);
@@ -139,6 +142,7 @@ public class InGameUIManager : MonoBehaviour
 
     public void OnSound()
     {
+        SoundUI.PlayOneShot(SoundUI.clip);
         b = !b;
         if (b)
             GameObject.FindWithTag("AudioManager").GetComponent<AudioManager>().Mixer.audioMixer.SetFloat("Sounds", 0);
@@ -148,6 +152,7 @@ public class InGameUIManager : MonoBehaviour
 
     public void OnPlay()
     {
+        SoundUI.PlayOneShot(SoundUI.clip);
         Time.timeScale = 1f;
         PlayerGFX.sprite = SkinChangeUI.Skin.sprite;
         _inGameUIState = InGameUIState.GameUI;
@@ -155,6 +160,7 @@ public class InGameUIManager : MonoBehaviour
 
     public void OnNext()
     {
+        SoundUI.PlayOneShot(SoundUI.clip);
         skinCounter++;
         if (skinCounter > skins.Length - 1) skinCounter = 0;
         SkinChangeUI.Skin.sprite = skins[skinCounter];
@@ -162,6 +168,7 @@ public class InGameUIManager : MonoBehaviour
 
     public void OnPrev()
     {
+        SoundUI.PlayOneShot(SoundUI.clip);
         skinCounter--;
         if (skinCounter < 0) skinCounter = skins.Length - 1;
         SkinChangeUI.Skin.sprite = skins[skinCounter];

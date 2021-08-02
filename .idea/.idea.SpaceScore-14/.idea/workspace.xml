@@ -2,157 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a39516d5-cf24-4f02-8f46-e18e3c361042" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/AllTheWayToTheSun-o2O0.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllTheWayToTheSun-o2O0.ttf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/Target.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/Target.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/Target.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/Target.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/LineMat_2.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/LineMat_2.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/LineShader.shadergraph" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/LineShader.shadergraph.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/LineTex_0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/LineTex_0.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/LineTex_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/LineTex_1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/New Material.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/New Material.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Score.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Score.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/arrow.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Target.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Target.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sounds.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sounds/Mixer.mixer" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sounds/Mixer.mixer.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sounds/Фоновая музыка.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sounds/Фоновая музыка.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/BH.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/BH/black hole.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/BH/black hole.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/BH/black hole0000.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/BH/black hole0000.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/BH/black hole0001.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/BH/black hole0001.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/BH/black hole0002.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/BH/black hole0002.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/BH/black hole0003.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/BH/black hole0003.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/BH/black hole0004.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/BH/black hole0004.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/BH/black hole0005.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/BH/black hole0005.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/BH/black hole0006.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/BH/black hole0006.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/BH/black hole0007.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/BH/black hole0007.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/BH/black hole0008.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/BH/black hole0008.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/BH/black hole0009.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/BH/black hole0009.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/Tiles.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/Tiles/BG.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/Tiles/BG.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/Tiles/backdrop.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/Tiles/backdrop.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/UI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/UI/Arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/UI/Arrow.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/UI/menu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/UI/menu.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/UI/menu_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/UI/menu_1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/UI/menu_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/UI/menu_2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/UI/menu_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/UI/menu_3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/UI/menu_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/UI/menu_4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/UI/menu_6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/UI/menu_6.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/UI/menu_7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/UI/menu_7.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/UI/menu_8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/UI/menu_8.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/backdrop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/backdrop.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/rocket_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/rocket_2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/rocket_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/rocket_3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SYS/Settings/New 2D Renderer Data.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SYS/Settings/New 2D Renderer Data.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/ShaderRoom.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/ShaderRoom.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/ShaderRoom.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/ShaderRoom/Global Volume Profile.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/ShaderRoom/Global Volume Profile.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Classes/NextPoint.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/InMenuUIManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/InGameUIClasses.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/InGameUIClasses/GameOverUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/InGameUIClasses/GameOverUI.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/InGameUIClasses/GameUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/InGameUIClasses/GameUI.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/InGameUIClasses/PauseUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/InGameUIClasses/PauseUI.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/InGameUIClasses/SkinChangeUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/InGameUIClasses/SkinChangeUI.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/InMenuUIClasses/HelpUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/InMenuUIClasses/HelpUI.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/InMenuUIClasses/MenuUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/InMenuUIClasses/MenuUI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sounds/454683__suburbanwizard__warp-speed1_01.pkf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sounds/454683__suburbanwizard__warp-speed1_01.pkf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sounds/454683__suburbanwizard__warp-speed1_01.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sounds/454683__suburbanwizard__warp-speed1_01.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sounds/Sound UI1.0.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sounds/Sound UI1.0.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/UI/menu_9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/UI/menu_9.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SpaceScore-14/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SpaceScore-14/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Background.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Background.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Red star.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Red star.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/StarBlock.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/StarBlock.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/White star.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/White star.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Yellow star.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Yellow star.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0000.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0000.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0001.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0002.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0003.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0004.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0004.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0005.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0005.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0006.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0006.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0007.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0007.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0008.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0008.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0009.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resourses/Sprites/black hole0009.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Respawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Classes/Respawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Respawner.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Classes/Respawner.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SYS/Settings/UniversalRP-HighQuality.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SYS/Settings/UniversalRP-HighQuality.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resourses/Sprites/UI/menu_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resourses/Sprites/UI/menu_7.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Arena_STmihan.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Arena_STmihan.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/D.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/D/D.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/D/D.unity.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test.unity.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Classes/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Classes/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InGameUIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InGameUIManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Classes/Star.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Classes/Star.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InMenuUIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InMenuUIManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.connect.share/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.connect.share/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -185,7 +51,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/D/Stars.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/D/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/NoPhys/PlayerNoPhys.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Classes/Star.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Classes/BlackHole.cs" />
       <option value="$PROJECT_DIR$/Assets/Respawner.cs" />
       <option value="$PROJECT_DIR$/Assets/NextPoint.cs" />
@@ -197,9 +62,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/InMenuUIClasses/MenuUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Classes/Respawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/InMenuUIClasses/HelpUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Classes/Player.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/InGameUIManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Classes/Star.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Classes/Player.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/InMenuUIManager.cs" />
     </changedPaths>
   </component>

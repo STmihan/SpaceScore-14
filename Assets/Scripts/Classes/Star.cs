@@ -10,6 +10,7 @@ public class Star : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             other.GetComponent<Player>().LineSpeed = LineSpeed;
+           
         }
     }
 }
